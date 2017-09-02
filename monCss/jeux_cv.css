@@ -1,0 +1,181 @@
+html {
+  font-family: 'Upheaval'
+}
+
+/* Zone header du site */
+#menu_bar {
+  width: 100%;
+  font-family: 'Upheaval', cursive;
+}
+
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./fonts/UpheavalTT-BRK-.eot');
+  src: url('./fonts/UpheavalTT-BRK-.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/UpheavalTT-BRK-.woff') format('woff'),
+    url('./fonts/UpheavalTT-BRK-.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Titre principale (jeux) */
+h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+.element {
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 12px 12px 12px purple, 3px 3px 4px pink;
+  }
+
+}
+/* Navigation header liens */
+.choixCategorie {
+  text-align: center;
+  margin-top: 20px;
+}
+.choixCategorie a {
+  color: purple;
+  text-decoration: none;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 105px;
+}
+.choixCategorie img {
+  width: 50px;
+}
+.choixCategorie span {
+  display: block;
+}
+
+
+/* Zone Du jeux */
+
+#background {
+  width: 800px;
+  height: 518px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+#jeux {
+  width: 610px;
+  height: 328px;
+  position: absolute;
+  top: 95px;
+  left: 95px;
+}
+
+#text {
+  width: 610px;
+  height: 328px;
+  font-size: 32px;
+  position: absolute;
+  top: 95px;
+  left: 95px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+#text p {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
+}
+
+#text #final-score {
+  top: 35%;
+}
+.restart {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
+  font-size: 20px;
+}
+.download-cv {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
+  font-size: 20px;
+}
+
+canvas {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#character {
+  z-index: 2;
+}
+#monster {
+  z-index: 1;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+#game_elements {
+  margin: 0 auto;
+  width: 800px;
+  padding-left: 35px;
+  position: relative;
+  margin-top: 20px;
+}
+#life, .avatar {
+  display: inline-block;
+}
+.heart {
+  width: 35px;
+}
+#score, #timer {
+  color: white;
+  display: inline-block;
+  font-size: 25px;
+}
+#score {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+#timer {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+#start2, #start3, #end {
+  display: none;
+}
+#text .click {
+  font-size: 18px;
+  top: 40%;
+}
